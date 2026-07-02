@@ -1,10 +1,11 @@
 title: "Self-Run Vibe Bootcamp"
 description: "A free, self-directed vibe coding bootcamp using Hermes Agent + free/cheap tools instead of expensive platforms"
-baseurl: ""
-url: "https://djphamdev.github.io/self-run-vibe-bootcamp"
+baseurl: "/self-run-vibe-bootcamp"
+url: "https://djphamdev.github.io"
 theme: minima
 markdown: kramdown
 highlighter: rouge
+permalink: /:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
