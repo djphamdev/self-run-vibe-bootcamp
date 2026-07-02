@@ -1,0 +1,43 @@
+# AINative Studio is doing real work and this project is in no way affiliated with them.
+# The original syllabus that inspired this site is the LA TechWeek Vibe Coding Camp (Oct 15, 2026).
+# All content here is original, MIT-licensed, and not affiliated with AINative Studio.
+
+# Self-Run Vibe Bootcamp
+
+A free, self-directed AI-native vibe coding bootcamp. The same curriculum as the
+LA TechWeek Vibe Coding Camp (Oct 15, 2026), but with a free stack and a 4-month
+head start. Built with Hermes Agent, OpenRouter, GitHub Pages, and Cloudflare.
+Total cost: $0 to start, less than $60/yr.
+
+## Why this exists
+
+The LA TechWeek Vibe Coding Camp is invite-only, in LA, on Oct 15, 2026. This
+is the self-run, free, online, start-now version. Same modules, same skills,
+free tools.
+
+## Quick start
+
+1. Read `start.md` for setup instructions
+2. Read `syllabus.md` for the full curriculum
+3. Pick a project from `projects.md` and ship it
+4. Share what you build on GitHub
+
+## Stack
+
+- **LLM routing:** OpenRouter (free models)
+- **Agent runtime:** Hermes Agent (replaces OpenClaw)
+- **AI IDEs:** Windsurf, Cursor, Trae, Claude Code
+- **Vector memory:** Supabase pgvector or ChromaDB
+- **UI:** shadcn/ui, daisyUI, Mamba UI
+- **Hosting:** GitHub Pages
+- **Domain:** Cloudflare Registrar
+- **Backend:** Convex or Supabase
+
+## License
+
+MIT. See [LICENSE](LICENSE) for the full text.
+
+## See also
+
+- Live site: https://djphamdev.github.io/self-run-vibe-bootcamp
+- Source repo: https://github.com/djphamdev/self-run-vibe-bootcamp

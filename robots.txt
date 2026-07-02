@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://djphamdev.github.io/self-run-vibe-bootcamp/sitemap.xml

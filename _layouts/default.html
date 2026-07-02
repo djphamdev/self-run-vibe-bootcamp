@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1117">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237c3aed'/%3E%3Ctext x='50' y='66' font-family='ui-monospace,monospace' font-size='52' font-weight='800' fill='white' text-anchor='middle'%3E∅%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {%- feed_meta -%}
+  {%- seo -%}
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="{{ '/' | relative_url }}" class="nav-brand">
+        <span class="logo">∅</span>
+        <span>Self-Run Vibe Bootcamp</span>
+      </a>
+      <div class="nav-links">
+        <a href="{{ '/start/' | relative_url }}" class="{% if page.url == '/start/' %}active{% endif %}">Start Here</a>
+        <a href="{{ '/syllabus/' | relative_url }}" class="{% if page.url == '/syllabus/' %}active{% endif %}">Syllabus</a>
+        <a href="{{ '/tools/' | relative_url }}" class="{% if page.url == '/tools/' %}active{% endif %}">Tools</a>
+        <a href="{{ '/hermes/' | relative_url }}" class="{% if page.url == '/hermes/' %}active{% endif %}">Hermes Agent</a>
+        <a href="{{ '/projects/' | relative_url }}" class="{% if page.url contains '/projects' %}active{% endif %}">Projects</a>
+        <a href="{{ '/resources/' | relative_url }}" class="{% if page.url contains '/resources' %}active{% endif %}">Resources</a>
+        <a href="{{ '/pricing/' | relative_url }}" class="{% if page.url == '/pricing/' %}active{% endif %}">Pricing</a>
+        <a href="{{ '/about/' | relative_url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+      </div>
+      <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" class="nav-cta" target="_blank" rel="noopener">⭐ Star on GitHub</a>
+    </div>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="{{ '/' | relative_url }}" class="nav-brand">
+          <span class="logo">∅</span>
+          <span>Self-Run Vibe Bootcamp</span>
+        </a>
+        <p>A free, self-directed AI-native vibe coding bootcamp. No gatekeeping. No tribalism. Just build.</p>
+        <p class="mono mt-2" style="color: var(--text-3); font-size: 12px;">v1.0 · Updated 2026-07-01</p>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="{{ '/start/' | relative_url }}">Start Here</a></li>
+          <li><a href="{{ '/syllabus/' | relative_url }}">Syllabus</a></li>
+          <li><a href="{{ '/tools/' | relative_url }}">Tools Map</a></li>
+          <li><a href="{{ '/hermes/' | relative_url }}">Hermes Agent</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Build</h4>
+        <ul>
+          <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+          <li><a href="{{ '/resources/' | relative_url }}">Resources</a></li>
+          <li><a href="{{ '/pricing/' | relative_url }}">Cost Breakdown</a></li>
+          <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" target="_blank" rel="noopener">GitHub Repo</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          <li><a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}/issues" target="_blank" rel="noopener">Issues</a></li>
+          <li><a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}/discussions" target="_blank" rel="noopener">Discussions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Self-Run Vibe Bootcamp. Free, open-source, MIT-licensed.</span>
+      <span>Built with <span class="accent">∅</span> on the open web</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ruby
+.bundle/
+vendor/
+
+# Node
+node_modules/
+package-lock.json
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Backups
+*.bak
+*.tmp

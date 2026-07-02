@@ -1,0 +1,71 @@
+title: "Self-Run Vibe Bootcamp"
+description: "A free, self-directed vibe coding bootcamp using Hermes Agent + free/cheap tools instead of expensive platforms"
+baseurl: ""
+url: "https://djphamdev.github.io/self-run-vibe-bootcamp"
+theme: minima
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Dark mode only
+theme_color: "#0d1117"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: /
+  - title: "Syllabus"
+    url: /syllabus/
+  - title: "Tools & Pricing"
+    url: /tools/
+  - title: "Hermes Agent"
+    url: /hermes/
+  - title: "Projects"
+    url: /projects/
+  - title: "Resources"
+    url: /resources/
+  - title: "Start Here"
+    url: /start/
+
+# Social
+github_username: djphamdev
+github_repo: self-run-vibe-bootcamp
+
+# Collections
+collections:
+  modules:
+    output: true
+  projects:
+    output: true
+  resources:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "modules"
+    values:
+      layout: "module"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: "resource"
+
+# Exclude
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
