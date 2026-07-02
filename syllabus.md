@@ -55,25 +55,25 @@ description: "The full 8-module AI-native vibe coding curriculum, reverse-engine
       <div class="tl-desc">Windsurf, Cursor, Claude Code, Kiro, Trae, AntiGravity, AINative. Build the same thing in each. Compare. <a href="{{ '/tools/' | relative_url }}#ides">→ IDE comparison</a></div>
     </div>
     <div class="tl-item">
-      <div class="tl-time">WEEK 2 · ~2 hrs</div>
-      <div class="tl-title"><a href="{{ '/tools/' | relative_url }}#infra">Module 3: Vector memory</a></div>
-      <div class="tl-desc">Free Supabase pgvector, ChromaDB, or Convex vectors. Build a RAG pipeline. <a href="{{ '/tools/' | relative_url }}#infra">→ Infrastructure options</a></div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-time">WEEK 3 · ~2 hrs</div>
-      <div class="tl-title"><a href="{{ '/tools/' | relative_url }}#infra">Module 4: UI components</a></div>
-      <div class="tl-desc">shadcn/ui, daisyUI, Mamba UI. Copy-paste a beautiful front-end in 20 minutes. <a href="{{ '/tools/' | relative_url }}#infra">→ UI libraries</a></div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-time">WEEK 3 · ~4 hrs</div>
-      <div class="tl-title"><a href="{{ '/hermes/' | relative_url }}">Module 5: Hermes Agent</a></div>
-      <div class="tl-desc">Skills, plugins, cron, sub-agents, Discord/Telegram. The real agentic runtime. <a href="{{ '/hermes/' | relative_url }}">→ Full Hermes guide</a></div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-time">WEEK 4 · ~3 hrs</div>
-      <div class="tl-title"><a href="{{ '/hermes/' | relative_url }}#multi-agent">Module 6: Multi-agent</a></div>
-      <div class="tl-desc">Coordinate agents. Cron + skills = real production workflow. (Replaces OpenClaw.) <a href="{{ '/hermes/' | relative_url }}#multi-agent">→ Multi-agent workflows</a></div>
-    </div>
+          <div class="tl-time">WEEK 2 · ~2 hrs</div>
+          <div class="tl-title"><a href="{{ '/module-3-vector-memory/' | relative_url }}">Module 3: Vector memory</a></div>
+          <div class="tl-desc">Free Supabase pgvector, ChromaDB, or Convex vectors. Build a RAG pipeline. <a href="{{ '/module-3-vector-memory/' | relative_url }}">→ Full module page</a></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">WEEK 3 · ~2 hrs</div>
+          <div class="tl-title"><a href="{{ '/module-4-ui-components/' | relative_url }}">Module 4: UI components</a></div>
+          <div class="tl-desc">shadcn/ui, daisyUI, Mamba UI. Copy-paste a beautiful front-end in 20 minutes. <a href="{{ '/module-4-ui-components/' | relative_url }}">→ Full module page</a></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">WEEK 3 · ~4 hrs</div>
+          <div class="tl-title"><a href="{{ '/module-5-hermes-agent/' | relative_url }}">Module 5: Hermes Agent</a></div>
+          <div class="tl-desc">Skills, plugins, cron, sub-agents, Discord/Telegram. The real agentic runtime. <a href="{{ '/module-5-hermes-agent/' | relative_url }}">→ Full module page</a></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">WEEK 4 · ~3 hrs</div>
+          <div class="tl-title"><a href="{{ '/module-6-multi-agent/' | relative_url }}">Module 6: Multi-agent</a></div>
+          <div class="tl-desc">Coordinate agents. Cron + skills = real production workflow. (Replaces OpenClaw.) <a href="{{ '/module-6-multi-agent/' | relative_url }}">→ Full module page</a></div>
+        </div>
     <div class="tl-item">
       <div class="tl-time">WEEK 4 · ~4 hrs</div>
       <div class="tl-title"><a href="{{ '/projects/' | relative_url }}">Module 7: Ship it</a></div>
@@ -156,8 +156,9 @@ description: "The full 8-module AI-native vibe coding curriculum, reverse-engine
     </ul>
     <p><a href="{{ '/tools/' | relative_url }}#ides">→ Full IDE comparison on Tools page</a></p>
 
-  <h2>🧱 Module 3: Vector memory <span class="tag tag-free">$0</span></h2>
+  <h2 id="module-3">🧱 Module 3: Vector memory <span class="tag tag-free">$0</span></h2>
   <p><strong>Goal:</strong> build a working RAG pipeline.</p>
+  <p><a href="{{ '/module-3-vector-memory/' | relative_url }}">→ Full dedicated module page with exercises</a></p>
   <h3>Free options</h3>
   <ul>
     <li><strong>Supabase pgvector</strong> — Postgres extension, free tier generous</li>
@@ -200,9 +201,9 @@ description: "The full 8-module AI-native vibe coding curriculum, reverse-engine
   </ul>
   <p><a href="{{ '/tools/' | relative_url }}#infra">→ UI libraries on Tools page</a></p>
 
-  <h2>🤖 Module 5: Hermes Agent <span class="tag tag-free">$0</span></h2>
+  <h2 id="module-5">🤖 Module 5: Hermes Agent <span class="tag tag-free">$0</span></h2>
   <p><strong>Goal:</strong> learn the agentic runtime.</p>
-  <p><a href="{{ '/hermes/' | relative_url }}">→ Full Hermes guide</a></p>
+  <p><a href="{{ '/module-5-hermes-agent/' | relative_url }}">→ Full dedicated module page with exercises</a></p>
   <h3>Topics</h3>
   <ul>
     <li>Skills — modular capabilities the agent can invoke</li>
@@ -234,8 +235,9 @@ cat ~/.hermes/cron/jobs.json | jq '.jobs[] | select(.id=="researcher")'
   </ol>
   <p><a href="{{ '/hermes/' | relative_url }}#cron">→ Cron deep-dive on Hermes page</a></p>
 
-  <h2>🔁 Module 6: Multi-agent workflows <span class="tag tag-free">$0</span></h2>
+  <h2 id="module-6">🔁 Module 6: Multi-agent workflows <span class="tag tag-free">$0</span></h2>
   <p><strong>Goal:</strong> coordinate multiple agents.</p>
+  <p><a href="{{ '/module-6-multi-agent/' | relative_url }}">→ Full dedicated module page with exercises</a></p>
   <h3>Why this replaces OpenClaw</h3>
   <p>OpenClaw is "peer-to-peer AI agent runtime". Cool idea, alpha product.
   Hermes already does the practical version: multiple agents coordinated via
