@@ -264,8 +264,8 @@ channels:
   Replaces a $20/mo personal AI service.</p>
 
   <h3>2. The "always-on monitor"</h3>
-  <p>15-min cron → check price of X → if threshold met, alert via TTS.
-  The 5800X3D stock tracker lives here.</p>
+  <p>15-min cron → check flight prices for your dates (non-stop only) → if price drops below threshold, alert via Discord/Telegram with booking link.
+  The flight tracker lives here.</p>
 
   <h3>3. The "research assistant"</h3>
   <p>Topic → agent searches → summarizes → saves to vector memory →
@@ -283,6 +283,104 @@ channels:
     <li><strong>Channel allowlists.</strong> Don't let your bot talk to random guilds.</li>
     <li><strong>Rate limit free models.</strong> OpenRouter free tier is throttled.</li>
   </ul>
+
+  <h2>⚡ Hermes Commands Cheatsheet</h2>
+  <p>These are the commands you'll use daily. Run <code>hermes --help</code> for the full list.</p>
+
+  <table class="compare">
+    <thead>
+      <tr><th>Command</th><th>What it does</th><th>Example</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>hermes chat "prompt"</code></td>
+        <td>One-shot chat with the agent</td>
+        <td><code>hermes chat "write a python hello world"</code></td>
+      </tr>
+      <tr>
+        <td><code>hermes chat --session NAME</code></td>
+        <td>Persistent session with memory</td>
+        <td><code>hermes chat --session dev "continue the api"</code></td>
+      </tr>
+      <tr>
+        <td><code>hermes chat --channel discord</code></td>
+        <td>Chat via Discord instead of CLI</td>
+        <td><code>hermes chat --channel discord "status?"</code></td>
+      </tr>
+      <tr>
+        <td><code>hermes gateway start</code></td>
+        <td>Start the daemon (runs cron, listens)</td>
+        <td><code>hermes gateway start</code></td>
+      </tr>
+      <tr>
+        <td><code>hermes gateway stop</code></td>
+        <td>Stop the daemon</td>
+        <td><code>hermes gateway stop</code></td>
+      </tr>
+      <tr>
+        <td><code>hermes skills list</code></td>
+        <td>List all discovered skills</td>
+        <td><code>hermes skills list</code></td>
+      </tr>
+      <tr>
+        <td><code>hermes cron list</code></td>
+        <td>List scheduled cron jobs</td>
+        <td><code>hermes cron list</code></td>
+      </tr>
+      <tr>
+        <td><code>hermes cron run ID</code></td>
+        <td>Manually trigger a cron job</td>
+        <td><code>hermes cron run researcher</code></td>
+      </tr>
+      <tr>
+        <td><code>hermes memory search "query"</code></td>
+        <td>Search vector memory</td>
+        <td><code>hermes memory search "flight tracker"</code></td>
+      </tr>
+      <tr>
+        <td><code>hermes config show</code></td>
+        <td>Show current config</td>
+        <td><code>hermes config show</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>🎯 The two commands you'll live in</h3>
+
+  <div class="grid grid-2">
+    <div class="card" style="border-color: var(--accent);">
+      <h3 style="color: var(--accent-2);">/goal "your objective"</h3>
+      <p>Tell Hermes what you want to achieve. It plans, breaks it down, and executes autonomously. No hand-holding.</p>
+      <div class="prompt">/goal "build a flight tracker that checks prices daily and alerts me when my LAX→JFK trip drops under $300"</div>
+      <p><strong>Why it's powerful:</strong> Hermes creates sub-agents, schedules cron jobs, sets up skills, and builds the whole thing. You review the output, not the steps.</p>
+    </div>
+    <div class="card" style="border-color: var(--success);">
+      <h3 style="color: var(--success);">/yolo</h3>
+      <p>Full autonomous mode. Hermes runs without asking for confirmation. It writes code, runs tests, deploys, and iterates until done.</p>
+      <div class="prompt">/yolo "deploy the flight tracker to GitHub Pages with a custom domain"</div>
+      <p><strong>Why it's powerful:</strong> Zero friction. You describe the end state, Hermes figures out the how. Use when you trust the stack and want speed.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <span class="icon-c">⚠️</span>
+    <p><strong>Workflow tip:</strong> Use a free AI (OpenRouter free models, Claude Code with free tier, or even ChatGPT web) to <em>design and validate</em> your idea first — write the spec, plan the architecture, think through edge cases. <em>Then</em> hand it to Hermes with <code>/goal</code> or <code>/yolo</code> to execute. Free AI for thinking, Hermes for doing.</p>
+  </div>
+
+  <h2>💰 Build for Money, Not Just Skills</h2>
+
+  <div class="callout" style="border-color: var(--warning); background: rgba(210, 153, 34, 0.1);">
+    <span class="icon-c">🎯</span>
+    <p><strong>Critical reminder:</strong> Vibe coding builds skills, but <em>shipping to paying customers</em> builds a business.</p>
+    <p>Before you write a single line of code:</p>
+    <ol>
+      <li><strong>Find a real problem</strong> — talk to 5 people who'd pay to solve it</li>
+      <li><strong>Validate willingness to pay</strong> — ask "would you pay $X/mo for this?" Get a yes or a "not that much"</li>
+      <li><strong>Ship the smallest thing</strong> — a landing page + Stripe link + manual process behind the scenes counts</li>
+      <li><strong>Iterate with real users</strong> — not your friends, not Twitter, actual strangers with credit cards</li>
+    </ol>
+    <p>Don't vibe code something for an audience of you and no one else. That gives you skills but no money. We're aiming for money.</p>
+  </div>
 
   <h2>📚 Further reading</h2>
   <ul>

@@ -119,13 +119,11 @@ description: "Project ideas to build during the bootcamp. Pick one, vibe-code it
     </div>
     <div class="card">
       <div class="mono accent">// P8</div>
-      <h3>Live stock/price monitor with TTS alert</h3>
-      <p>Hermes cron checks a price every 45min. If threshold met, TTS
-      announcement on Discord. Free forever. We use this for 5800X3D
-      stock tracking.</p>
+      <h3>Flight tracker for specific dates</h3>
+      <p>Hermes cron checks flight prices for your dates (non-stop only). If price drops below threshold, alerts via Discord/Telegram with booking link. Free forever. Perfect for planning trips.</p>
       <div class="tags">
         <span class="tag">Cron</span>
-        <span class="tag">TTS</span>
+        <span class="tag">Flights</span>
         <span class="tag">Alert</span>
       </div>
     </div>

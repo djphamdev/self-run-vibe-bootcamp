@@ -96,6 +96,11 @@ description: "Set up your free AI-native dev stack in under an hour. Hermes Agen
 
   <h2>🚀 Setup, in order</h2>
 
+  <div class="callout" style="border-color: var(--info); background: rgba(88, 166, 255, 0.1);">
+    <span class="icon-c">💡</span>
+    <p><strong>Pro workflow:</strong> Use a free AI (OpenRouter free models via web, Claude Code free tier, or ChatGPT web) to <em>design and validate</em> your idea first — write the spec, plan the architecture, think through edge cases. <em>Then</em> hand it to Hermes with <code>/goal</code> or <code>/yolo</code> to execute. Free AI for thinking, Hermes for doing.</p>
+  </div>
+
   <h3>Step 1: Create a GitHub account (if you don't have one)</h3>
   <p>
     You're on GitHub Pages, so you need one anyway. Free for public repos, $4/mo for
@@ -195,6 +200,13 @@ npx convex dev  # starts dev server</div>
     <li>☐ (Optional) Custom domain on Cloudflare</li>
     <li>☐ (Optional) Convex backend</li>
   </ul>
+
+  <div class="callout" style="border-color: var(--warning); background: rgba(210, 153, 34, 0.1);">
+    <span class="icon-c">🎯</span>
+    <p><strong>Build for money, not just skills.</strong> Vibe coding builds skills, but <em>shipping to paying customers</em> builds a business.</p>
+    <p>Before you write code: <strong>find a real problem</strong> → talk to 5 people who'd pay → ask "would you pay $X/mo?" → ship the smallest thing that charges money → iterate with real users (strangers with credit cards, not friends).</p>
+    <p>Don't vibe code something for an audience of you and no one else. That gives you skills but no money. We're aiming for money.</p>
+  </div>
 
   <h2>🎓 What's next?</h2>
   <p>You have the stack. Now let's actually use it.</p>

@@ -18,7 +18,7 @@ description: "Self-directed bootcamp covering the AI dev stack — Hermes Agent,
   <div class="hero-actions">
     <a href="{{ '/start/' | relative_url }}" class="btn btn-primary">⚡ Start the bootcamp</a>
     <a href="{{ '/syllabus/' | relative_url }}" class="btn btn-ghost">📚 See the syllabus</a>
-    <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" target="_blank" rel="noopener" class="btn btn-ghost">⭐ Star on GitHub</a>
+    <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" target="_blank" rel="noopener" class="btn btn-ghost">📦 View repo</a>
   </div>
 
   <div class="stat-strip">
@@ -259,8 +259,8 @@ description: "Self-directed bootcamp covering the AI dev stack — Hermes Agent,
     <div class="grid grid-3">
       <div class="card">
         <div class="mono accent">// 1</div>
-        <h3>Star the repo</h3>
-        <p>Watch for updates. Syllabus gets richer weekly.</p>
+        <h3>Clone the repo</h3>
+        <p>Fork or clone to have your own copy. Make it yours.</p>
         <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" target="_blank" rel="noopener" class="more">github.com/{{ site.github_username }}/{{ site.github_repo }} →</a>
       </div>
       <div class="card">
