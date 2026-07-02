@@ -200,6 +200,11 @@ description: "Project ideas to build during the bootcamp. Pick one, vibe-code it
     <li>☐ A "Built with" badge crediting the bootcamp</li>
   </ul>
 
+  <div class="callout">
+    <span class="icon-c">⚡</span>
+    <p><strong>Want a head start?</strong> Check out <a href="{{ '/starter-kits/' | relative_url }}">Starter Kits</a> — copy-pasteable v0 templates for each project. Ship in 30 minutes, iterate forever.</p>
+  </div>
+
   <h2>🏆 Share your work</h2>
   <p>Done? Open a PR to <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" target="_blank" rel="noopener">this repo</a>
   adding your project to <code>/projects/community/</code>. We'll feature

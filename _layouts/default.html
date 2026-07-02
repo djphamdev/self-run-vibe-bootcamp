@@ -27,6 +27,7 @@
         <a href="{{ '/tools/' | relative_url }}" class="{% if page.url == '/tools/' %}active{% endif %}">Tools</a>
         <a href="{{ '/hermes/' | relative_url }}" class="{% if page.url == '/hermes/' %}active{% endif %}">Hermes Agent</a>
         <a href="{{ '/projects/' | relative_url }}" class="{% if page.url contains '/projects' %}active{% endif %}">Projects</a>
+        <a href="{{ '/starter-kits/' | relative_url }}" class="{% if page.url == '/starter-kits/' %}active{% endif %}">Starter Kits</a>
         <a href="{{ '/resources/' | relative_url }}" class="{% if page.url contains '/resources' %}active{% endif %}">Resources</a>
         <a href="{{ '/pricing/' | relative_url }}" class="{% if page.url == '/pricing/' %}active{% endif %}">Pricing</a>
         <a href="{{ '/about/' | relative_url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
@@ -59,14 +60,15 @@
         </ul>
       </div>
       <div>
-        <h4>Build</h4>
-        <ul>
-          <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-          <li><a href="{{ '/resources/' | relative_url }}">Resources</a></li>
-          <li><a href="{{ '/pricing/' | relative_url }}">Cost Breakdown</a></li>
-          <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
-        </ul>
-      </div>
+              <h4>Build</h4>
+              <ul>
+                <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+                <li><a href="{{ '/starter-kits/' | relative_url }}">Starter Kits</a></li>
+                <li><a href="{{ '/resources/' | relative_url }}">Resources</a></li>
+                <li><a href="{{ '/pricing/' | relative_url }}">Cost Breakdown</a></li>
+                <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+              </ul>
+            </div>
       <div>
         <h4>Connect</h4>
         <ul>
