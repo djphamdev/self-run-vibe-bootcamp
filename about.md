@@ -22,12 +22,12 @@ description: "Why we built this. The camp costs money. We don't. Same skills, fr
 
   <h2>The short version</h2>
   <p>
-    On July 1st, 2026, I found a syllabus for the <strong>LA TechWeek Vibe
-    Coding Camp</strong> — an in-person, invite-only, all-day event on
-    October 15, 2026 in Los Angeles. The content looked great. The setup
-    also assumed I'd pay for Cursor, ZeroDB, AIKit, and use their
-    "experimental" OpenClaw for multi-agent stuff.
-  </p>
+      On July 1st, 2026, I found a syllabus for the <strong>LA TechWeek Vibe
+      Coding Camp</strong> — an in-person, <a href="https://luma.com/s0qgwh1y" target="_blank" rel="noopener">registration-required</a>, all-day event on
+      October 15, 2026 in Los Angeles. The content looked great. The setup
+      also assumed I'd pay for Cursor, ZeroDB, AIKit, and use their
+      "experimental" OpenClaw for multi-agent stuff.
+    </p>
   <p>
     I'm impatient. I'm budget-oriented. And I don't like being gatekept.
     So I reverse-engineered the syllabus, kept the lessons, swapped the
@@ -120,7 +120,7 @@ description: "Why we built this. The camp costs money. We don't. Same skills, fr
   <div class="callout">
     <span class="icon-c">∅</span>
     <p>
-      <strong>— ZeroSkills</strong> (Don Zzzilla)<br>
+      <strong>— Don</strong><br>
       Builder. Sysadmin. Tinkerer. Running Hermes on a Pi in the closet.<br>
       <a href="https://github.com/djphamdev" target="_blank" rel="noopener">github.com/djphamdev</a>
     </p>

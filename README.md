@@ -6,7 +6,7 @@
 
 ## What is this?
 
-The LA TechWeek Vibe Coding Camp is invite-only, in LA, on Oct 15, 2026. This is the **self-run, free, online, start-now** version. Same modules, same skills, free tools.
+The LA TechWeek Vibe Coding Camp is <a href="https://luma.com/s0qgwh1y" target="_blank" rel="noopener">registration-required</a>, in LA, on Oct 15, 2026. This is the **self-run, free, online, start-now** version. Same modules, same skills, free tools.
 
 **Built with:** Hermes Agent + OpenRouter (free models) + GitHub Pages + Cloudflare + Convex. Total cost: **$0 to start, &lt;$60/yr.**
 
@@ -81,7 +81,7 @@ MIT. Take it, fork it, ship it.
 
 ---
 
-**Built by [ZeroSkills](https://github.com/djphamdev)** · ∅
+**Built by [djphamdev](https://github.com/djphamdev)**
  
  
  

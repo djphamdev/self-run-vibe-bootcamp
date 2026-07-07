@@ -231,7 +231,7 @@ description: "Self-directed bootcamp covering the AI dev stack — Hermes Agent,
       <div class="section-eyebrow">// Why we exist</div>
       <h2 class="section-title">The camp costs money. We don't.</h2>
       <p class="section-sub">
-        The LA TechWeek Vibe Coding Camp (Oct 15, 2026) is a great idea. But it's invite-only, in LA,
+        The LA TechWeek Vibe Coding Camp (Oct 15, 2026) is a great idea. But it's <a href="https://luma.com/s0qgwh1y" target="_blank" rel="noopener">registration-required</a>, in LA,
         and assumes you'll pay for Cursor, ZeroDB, and OpenClaw. We took the syllabus, kept the
         lessons, swapped the tools, and put it online for free.
       </p>
